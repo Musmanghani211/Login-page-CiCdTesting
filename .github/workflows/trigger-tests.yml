@@ -5,12 +5,13 @@ on:
     branches: [ main ]
 
 jobs:
-  trigger-playwright:
+  trigger-tests:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Trigger QA workflow
+      - name: Trigger Playwright tests repo
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           repository: Musmanghani211/Login-page-CiCdTesting-playwright
           event-type: run-playwright-tests
