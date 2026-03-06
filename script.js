@@ -11,7 +11,7 @@ loginForm.addEventListener('submit', function(e) {
     alert('Login successful!');
     errorMsg.textContent = '';
   } else if(username === 'locked_out_user') {
-    errorMsg.textContent = 'sorry ye user locked ho chuka hai';
+    errorMsg.textContent = 'Sorry, this user has been locked out.'; //testing
   } else {
     errorMsg.textContent = 'Sorry, your username or password is incorrect'; //testing
   }
