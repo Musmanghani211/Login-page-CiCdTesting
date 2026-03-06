@@ -12,6 +12,6 @@ jobs:
       - name: Trigger Playwright tests repo
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.PAT_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}  // Personal Access Token with repo permissions
           repository: Musmanghani211/Login-page-CiCdTesting-playwright
           event-type: run-playwright-tests
