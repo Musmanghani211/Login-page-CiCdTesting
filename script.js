@@ -11,8 +11,8 @@ loginForm.addEventListener('submit', function(e) {
     alert('Login successful!');
     errorMsg.textContent = '';
   } else if(username === 'locked_out_user') {
-    errorMsg.textContent = 'Sorry, this user has been locked out';
+    errorMsg.textContent = 'sorry ye user locked ho chuka hai';
   } else {
-    errorMsg.textContent = 'sorry ye user locked ho chuka hai'; //testing
+    errorMsg.textContent = 'Sorry, your username or password is incorrect'; //testing
   }
 });
