@@ -13,6 +13,6 @@ loginForm.addEventListener('submit', function(e) {
   } else if(username === 'locked_out_user') {
     errorMsg.textContent = 'Sorry, this user has been locked out';
   } else {
-    errorMsg.textContent = 'Sorry, your username or password is incorrect';
+    errorMsg.textContent = 'Sorry, your username or password is incorrect'; //testing
   }
 });
